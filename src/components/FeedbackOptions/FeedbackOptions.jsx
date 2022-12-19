@@ -6,9 +6,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       <Wrap>
-        {optionsArr.map((el, index) => {
+        {optionsArr.map(el => {
           return (
-            <Btn key={index} onClick={() => onLeaveFeedback(el)}>
+            <Btn key={el} onClick={() => onLeaveFeedback(el)}>
               {el}
             </Btn>
           );

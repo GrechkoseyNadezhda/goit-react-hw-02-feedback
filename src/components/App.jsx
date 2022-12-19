@@ -16,7 +16,7 @@ export class App extends Component {
   };
 
   countPositiveFeedbackPercentage = total => {
-    return Math.ceil((this.state.good / total) * 100);
+    return total ? Math.ceil((this.state.good / total) * 100) : 0;
   };
 
   onLeaveFeedback = feetback => {
